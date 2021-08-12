@@ -195,9 +195,15 @@ Use the getLongReviews function below to do the following:
   ]
 */
 
-function getLongReviews(/* code here */) {
-    /* code here */
+function getLongReviews(array) {
+  let reviewArray = []
+  for (let i = 0 ; i < array.length ; i++) {
+      if ( array[i].feedback.split(" ").length > 15) {
+        reviewArray.push(array[i])
+      }
   }
+  return reviewArray
+} 
   
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪💪💪💪💪 
