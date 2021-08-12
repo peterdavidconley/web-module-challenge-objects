@@ -17,8 +17,9 @@ The function should:
 
 // pass 3 parameters - name, price, category
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(name, price, category){
+    let menuItem = {name, price, category}
+    return menuItem
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -31,7 +32,10 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
-// just invoking function from task 1a
+
+console.log(createMenuItem("Taco", 5, "Dinner"))
+console.log(createMenuItem("Burger", 12, "Dinner"))
+console.log(createMenuItem("Burrito", 9 ,"Lunch"))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -50,6 +54,13 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
+  discount: function (type) {
+    if (type === "teacher" || type === "student" ) {
+    return this.price * 0.75
+    } else if (type === "public") {
+      return this.price * 0.90
+    }
+  }
   //method called discount and you are giving the student and teacher a discount and the public a public price. You are just returning the discounted price, not updating the price
 }
 
