@@ -108,8 +108,10 @@ Write a function that creates an object with name, rating, feedback, add the new
 
 // pass array, name, rating, and feedback as parameters & push the object to the end of the array and return resulting array
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(array, name, rating, feedback){
+  const newObject = {name, rating, feedback};
+  array.push(newObject)
+  return array
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
