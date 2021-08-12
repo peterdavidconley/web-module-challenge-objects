@@ -15,6 +15,8 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
+//Adding code to make an initial push to Github
+
 function createMenuItem(/*Your code here*/){
     /*Your code here*/
 }
